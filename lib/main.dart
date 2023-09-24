@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:todo_bloc/splash_screen.dart';
+import 'package:todo_bloc/resource/colors.dart';
+import 'package:todo_bloc/screens/splash/splash_screen.dart';
 
 void main() {
      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: Colors.lightBlue,
+    statusBarColor: haSolidColors.statuseBarColor,
     statusBarBrightness: Brightness.light,
   ));
   runApp(const MyApp());
