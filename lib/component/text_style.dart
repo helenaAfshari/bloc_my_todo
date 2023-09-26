@@ -20,5 +20,16 @@ static TextStyle getStartedTextStyle = GoogleFonts.roboto(
   color: haSolidColors.getStartedTextColor,
   fontWeight: FontWeight.normal,
 );
+
+static TextStyle mTodoLogoTextStyle = GoogleFonts.jost(
+  fontSize: 20,
+  color: haSolidColors.getStartedTextColor,
+  fontWeight: FontWeight.bold,
+);
+
+static TextStyle searchTextStyle = GoogleFonts.jost(
+  fontSize: 16,
+  color: haSolidColors.searchTextColor,
+);
   
 }

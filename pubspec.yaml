@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.7
   google_fonts: ^6.1.0
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+  hive: ^2.2.3
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +66,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/icon/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -78,13 +82,12 @@ flutter:
   # fonts:
   #   - family: Jost
   #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #         style: italic
+  #       - asset: fonts/light.ttf
   # - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

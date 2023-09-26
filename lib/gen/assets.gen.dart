@@ -9,19 +9,39 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsIconGen {
+  const $AssetsIconGen();
+
+  /// File path: assets/icon/Vector.svg
+  String get vector => 'assets/icon/Vector.svg';
+
+  /// File path: assets/icon/ic_round-search.svg
+  String get icRoundSearch => 'assets/icon/ic_round-search.svg';
+
+  /// File path: assets/icon/search.svg
+  String get search => 'assets/icon/search.svg';
+
+  /// List of all assets
+  List<String> get values => [vector, icRoundSearch, search];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/background_home.svg
+  String get backgroundHome => 'assets/images/background_home.svg';
 
   /// File path: assets/images/managee.png
   AssetGenImage get managee => const AssetGenImage('assets/images/managee.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [managee];
+  List<dynamic> get values => [backgroundHome, managee];
 }
 
 class Assets {
   Assets._();
 
+  static const $AssetsIconGen icon = $AssetsIconGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
