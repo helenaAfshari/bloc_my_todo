@@ -30,6 +30,8 @@ class MyApp extends StatelessWidget {
 }
 
 
+
+
 // import 'package:flutter/material.dart';
 
 // void main() {
@@ -51,54 +53,60 @@ class MyApp extends StatelessWidget {
 // }
 
 // class _MyGridState extends State<MyGrid> {
-//   List<String> items = List.generate(6, (index) => "Item $index");
+//   List<String> items = List.generate(2, (index) => "Item $index");
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('لیست Grid با ایکون ثابت'),
-//       ),
-//       body: GridView.builder(
-//         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-//           crossAxisCount: 3, // تعداد ستون‌ها
-//           mainAxisSpacing: 10.0, // فاصله در سمت عمودی بین ایتم‌ها
-//           crossAxisSpacing: 10.0, // فاصله در سمت افقی بین ایتم‌ها
-//         ),
-//         itemCount: items.length + 1, // تعداد ایتم‌ها + 1 برای دکمه اضافه کردن
-//         itemBuilder: (context, index) {
-//           if (index < items.length) {
-//             // ایتم‌های لیست
-//             return Container(
-//               color: Colors.blue, // رنگ پس زمینه ایتم
-//               child: Center(
-//                 child: Text(
-//                   items[index],
-//                   style: TextStyle(fontSize: 20),
-//                 ),
+     
+//       body: Column(
+//         children: [
+//           Expanded(
+//             child: GridView.builder(
+//               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+//                 crossAxisCount: 3, // تعداد ستون‌ها
+//                 mainAxisSpacing: 10.0, // فاصله در سمت عمودی بین ایتم‌ها
+//                 crossAxisSpacing: 10.0, // فاصله در سمت افقی بین ایتم‌ها
 //               ),
-//             );
-//           } else {
-//             // دکمه اضافه کردن
-//             return GestureDetector(
-//               onTap: () {
-//                 setState(() {
-//                   items.add("Item ${items.length}");
-//                 });
+//               itemCount: items.length + 1, // تعداد ایتم‌ها + 1 برای دکمه اضافه کردن
+//               itemBuilder: (context, index) {
+//                 if (index < items.length) {
+//                   // ایتم‌های لیست
+//                   return Container(
+                    
+//                     color: Color.fromARGB(255, 15, 66, 97), // رنگ پس زمینه ایتم
+//                     child: Center(
+//                       child: Text(
+//                         items[index],
+//                         style: TextStyle(fontSize: 20),
+//                       ),
+//                     ),
+//                   );
+//                 } else {
+//                   // دکمه اضافه کردن
+//                   return GestureDetector(
+//                     onTap: () {
+//                       setState(() {
+//                         items.add("Item ${items.length}");
+//                       });
+//                     },
+//                     child: Container(
+                     
+//                       color: Colors.green, // رنگ پس زمینه دکمه
+//                       child: Center(
+//                         child: Icon(
+//                           Icons.add,
+//                           size: 40,
+//                           color: Colors.white,
+//                         ),
+//                       ),
+//                     ),
+//                   );
+//                 }
 //               },
-//               child: Container(
-//                 color: Colors.green, // رنگ پس زمینه دکمه
-//                 child: Center(
-//                   child: Icon(
-//                     Icons.add,
-//                     size: 40,
-//                     color: Colors.white,
-//                   ),
-//                 ),
-//               ),
-//             );
-//           }
-//         },
+//             ),
+//           ),
+//         ],
 //       ),
 //     );
 //   }
